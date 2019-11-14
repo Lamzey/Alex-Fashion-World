@@ -1,0 +1,833 @@
+2019/11/13 13:28:03 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "Home". in C:\xampp\htdocs\talktech\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('Home')
+#1 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/talktech/index.php/Home
+---
+2019/11/13 16:50:18 [error] [exception.CException] CException: Property "CDbConnection.localhost" is not defined. in C:\xampp\htdocs\talktech\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\YiiBase.php(227): CComponent->__set('localhost', '127.0.0.1')
+#1 C:\xampp\htdocs\talktech\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\talktech\framework\base\CModule.php(103): CModule->getComponent('db')
+#3 C:\xampp\htdocs\talktech\framework\gii\generators\model\ModelCode.php(60): CModule->__get('db')
+#4 C:\xampp\htdocs\talktech\framework\web\CFormModel.php(39): ModelCode->init()
+#5 C:\xampp\htdocs\talktech\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#6 C:\xampp\htdocs\talktech\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#7 C:\xampp\htdocs\talktech\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#8 C:\xampp\htdocs\talktech\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\talktech\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\talktech\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('')
+#12 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model')
+#13 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/talktech/index.php/gii/model
+---
+2019/11/13 17:04:05 [error] [php] Object of class Customername could not be converted to string (C:\xampp\htdocs\talktech\protected\controllers\CustomerController.php:10)
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(286): CustomerController->runAction()
+#1 C:\xampp\htdocs\talktech\framework\web\CController.php(265): CustomerController->runActionWithFilters()
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CustomerController->run()
+#3 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\talktech\index.php(13): CWebApplication->run()
+REQUEST_URI=/talktech/index.php/customer
+in C:\xampp\htdocs\talktech\protected\controllers\CustomerController.php (10)
+in C:\xampp\htdocs\talktech\index.php (13)
+2019/11/13 17:04:59 [error] [php] Object of class Customername could not be converted to string (C:\xampp\htdocs\talktech\protected\controllers\CustomerController.php:10)
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(286): CustomerController->runAction()
+#1 C:\xampp\htdocs\talktech\framework\web\CController.php(265): CustomerController->runActionWithFilters()
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CustomerController->run()
+#3 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\talktech\index.php(13): CWebApplication->run()
+REQUEST_URI=/talktech/index.php/customer
+in C:\xampp\htdocs\talktech\protected\controllers\CustomerController.php (10)
+in C:\xampp\htdocs\talktech\index.php (13)
+2019/11/13 17:06:59 [error] [exception.ParseError] ParseError: syntax error, unexpected ':', expecting ',' or ';' in C:\xampp\htdocs\talktech\protected\views\customer\index.php:13
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\talktech\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\talktech\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#3 C:\xampp\htdocs\talktech\protected\controllers\CustomerController.php(11): CController->render('index', Array)
+#4 C:\xampp\htdocs\talktech\framework\web\actions\CInlineAction.php(49): CustomerController->actionIndex()
+#5 C:\xampp\htdocs\talktech\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\talktech\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\talktech\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('')
+#9 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('customer')
+#10 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/talktech/index.php/customer
+---
+2019/11/14 11:32:32 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "images". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/ale...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/images/alexfashion.jpg
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 11:38:36 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "images". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/ale...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/images/alexfashion1.jpg
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 11:39:56 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "alexfashion.jpg". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('alexfashion.jpg')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('alexfashion.jpg')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/alexfashio...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/alexfashion.jpg
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:19:03 [error] [exception.CException] CException: Property "CWebApplication.image" is not defined. in C:\xampp\htdocs\talktech\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\base\CModule.php(105): CComponent->__get('image')
+#1 C:\xampp\htdocs\talktech\protected\views\layouts\main.php(68): CModule->__get('image')
+#2 C:\xampp\htdocs\talktech\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\talktech\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\talktech\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\talktech\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\xampp\htdocs\talktech\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\xampp\htdocs\talktech\framework\web\CBaseController.php(215): COutputProcessor->run()
+#8 C:\xampp\htdocs\talktech\framework\web\CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#9 C:\xampp\htdocs\talktech\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\xampp\htdocs\talktech\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\talktech\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\talktech\framework\web\CController.php(787): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\talktech\protected\controllers\SiteController.php(32): CController->render('index')
+#14 C:\xampp\htdocs\talktech\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 C:\xampp\htdocs\talktech\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\talktech\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\talktech\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('index')
+#19 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#20 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/talktech/index.php/site/index
+HTTP_REFERER=http://localhost/talktech/index.php/site/login
+---
+2019/11/14 12:26:28 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "favicon.jpg". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('favicon.jpg')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('favicon.jpg')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/favicon.jp...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/favicon.jpg
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:27:39 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "images". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/ale...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/images/alexfashion.jpg
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:35:26 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "images". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/ale...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/images/alexfashion1.jpg
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:37:37 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/macboo...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/img/macbook-pro.png
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:39:12 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/macboo...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/img/macbook-pro.png
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:39:20 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/macboo...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/img/macbook-pro.png
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:39:32 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/macboo...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/img/macbook-pro.png
+HTTP_REFERER=http://localhost/talktech/index.php/site/page?view=about
+---
+2019/11/14 12:39:37 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/macboo...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/img/macbook-pro.png
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:39:57 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/macboo...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/img/macbook-pro.png
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:44:47 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/macboo...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/img/macbook-pro.png
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:47:10 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/macboo...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/img/macbook-pro.png
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:49:31 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "css". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/css/bootstrap.css
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:49:31 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "css". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/style....')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/css/style.css
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:49:32 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "css". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/animat...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/css/animate.css
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:49:33 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "css". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/magnif...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/css/magnific-popup.css
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:49:32 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/macboo...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/img/macbook-pro.png
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:49:33 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "css". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/respon...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/css/responsive.css
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:49:33 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/js/jquery.1.8.3.min.js
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:49:33 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "css". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/css/bootstrap.css
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:49:33 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "css". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/font-a...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/css/font-awesome.css
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:49:33 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/js/jquery.easing.1.3.js
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:49:33 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery-...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/js/jquery-scrolltofixed.js
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:49:33 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/bootstr...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/js/bootstrap.js
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:49:33 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/js/jquery.isotope.js
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:49:33 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/wow.js')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/js/wow.js
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:49:34 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/magnifi...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/js/magnific-popup.js
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:49:34 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/classie...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/js/classie.js
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:49:34 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "contactform". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('contactform')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('contactform')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/contactfor...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/contactform/contactform.js
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:49:34 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery-...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/js/jquery-scrolltofixed.js
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:49:34 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/js/jquery.easing.1.3.js
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:49:35 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/jquery....')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/js/jquery.isotope.js
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:49:35 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/wow.js')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/js/wow.js
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:49:35 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/classie...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/js/classie.js
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:49:35 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "js". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('js')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('js')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/js/magnifi...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/js/magnific-popup.js
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 12:49:35 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "contactform". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('contactform')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('contactform')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/contactfor...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/contactform/contactform.js
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 13:01:22 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/macboo...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/img/macbook-pro.png
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 13:01:43 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/macboo...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/img/macbook-pro.png
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 13:10:17 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/macboo...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/img/macbook-pro.png
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 13:11:44 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/macboo...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/img/macbook-pro.png
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 13:12:44 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/macboo...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/img/macbook-pro.png
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 13:14:18 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/macboo...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/img/macbook-pro.png
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 13:17:25 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/macboo...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/img/macbook-pro.png
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 13:18:30 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/macboo...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/img/macbook-pro.png
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 13:19:50 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/macboo...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/img/macbook-pro.png
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 15:13:00 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/macboo...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/img/macbook-pro.png
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 15:28:48 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/macboo...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/img/macbook-pro.png
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 15:31:16 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "img/macbook-pro.png". in C:\xampp\htdocs\talktech\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('img/macbook-pro...')
+#1 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/talktech/index.php/img/macbook-pro.png
+HTTP_REFERER=http://localhost/talktech/index.php/
+---
+2019/11/14 15:33:14 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "CustomerController/index". in C:\xampp\htdocs\talktech\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('CustomerControl...')
+#1 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/talktech/index.php/CustomerController/index
+HTTP_REFERER=http://localhost/talktech/index.php/
+---
+2019/11/14 15:34:58 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "CustomerController". in C:\xampp\htdocs\talktech\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('CustomerControl...')
+#1 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/talktech/index.php/CustomerController
+---
+2019/11/14 15:35:10 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "CustomerController". in C:\xampp\htdocs\talktech\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('CustomerControl...')
+#1 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/talktech/index.php/CustomerController
+HTTP_REFERER=http://localhost/talktech/index.php/gii/crud/index
+---
+2019/11/14 15:37:06 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "CustomerController". in C:\xampp\htdocs\talktech\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('CustomerControl...')
+#1 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/talktech/index.php/CustomerController
+HTTP_REFERER=http://localhost/talktech/index.php/gii/crud/index
+---
+2019/11/14 15:37:13 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "Controller". in C:\xampp\htdocs\talktech\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('Controller')
+#1 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/talktech/index.php/Controller
+---
+2019/11/14 15:37:38 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "Controller". in C:\xampp\htdocs\talktech\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('Controller')
+#1 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/talktech/index.php/Controller
+---
+2019/11/14 15:42:38 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'customer.customers' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `customers`.
+in C:\xampp\htdocs\talktech\index.php (13)
+2019/11/14 15:42:38 [error] [exception.CDbException] CDbException: The table "customers" for active record class "Customers" cannot be found in the database. in C:\xampp\htdocs\talktech\framework\db\ar\CActiveRecord.php:2390
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(Customers))
+#1 C:\xampp\htdocs\talktech\framework\db\ar\CActiveRecord.php(138): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\talktech\framework\gii\generators\crud\CrudCode.php(66): CActiveRecord->__get('tableSchema')
+#3 C:\xampp\htdocs\talktech\framework\validators\CInlineValidator.php(42): CrudCode->validateModel('model', Array)
+#4 C:\xampp\htdocs\talktech\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#5 C:\xampp\htdocs\talktech\framework\base\CModel.php(159): CValidator->validate(Object(CrudCode), Array)
+#6 C:\xampp\htdocs\talktech\framework\gii\CCodeGenerator.php(159): CModel->validate()
+#7 C:\xampp\htdocs\talktech\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 C:\xampp\htdocs\talktech\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 C:\xampp\htdocs\talktech\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\talktech\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\talktech\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/crud/index')
+#14 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/talktech/index.php/gii/crud/index
+HTTP_REFERER=http://localhost/talktech/index.php/gii/crud/index
+---
+2019/11/14 15:47:23 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'customer.tbl_user' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_user`.
+in C:\xampp\htdocs\talktech\index.php (13)
+2019/11/14 15:48:04 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'customer.customers' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `customers`.
+in C:\xampp\htdocs\talktech\index.php (13)
+2019/11/14 15:49:05 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "Controller". in C:\xampp\htdocs\talktech\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('Controller')
+#1 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/talktech/index.php/Controller
+HTTP_REFERER=http://localhost/talktech/index.php/customername
+---
+2019/11/14 15:51:03 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "CustomernameController". in C:\xampp\htdocs\talktech\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('CustomernameCon...')
+#1 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/talktech/index.php/CustomernameController
+HTTP_REFERER=http://localhost/talktech/
+---
+2019/11/14 15:51:44 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "CustomernameController". in C:\xampp\htdocs\talktech\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('CustomernameCon...')
+#1 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/talktech/index.php/CustomernameController
+HTTP_REFERER=http://localhost/talktech/
+---
+2019/11/14 15:54:05 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "controllers/Customername". in C:\xampp\htdocs\talktech\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('controllers/Cus...')
+#1 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/talktech/index.php/controllers/Customername
+HTTP_REFERER=http://localhost/talktech/index.php/
+---
+2019/11/14 15:54:30 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "controllers/Customername". in C:\xampp\htdocs\talktech\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('controllers/Cus...')
+#1 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/talktech/index.php/controllers/Customername
+HTTP_REFERER=http://localhost/talktech/index.php/
+---
+2019/11/14 15:55:41 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/macboo...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/img/macbook-pro.png
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 16:02:57 [error] [exception.CException] CException: Property "Customername.lastname" is not defined. in C:\xampp\htdocs\talktech\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\db\ar\CActiveRecord.php(145): CComponent->__get('lastname')
+#1 C:\xampp\htdocs\talktech\framework\web\helpers\CHtml.php(2760): CActiveRecord->__get('lastname')
+#2 C:\xampp\htdocs\talktech\framework\web\helpers\CHtml.php(1840): CHtml::resolveValue(Object(Customername), 'lastname')
+#3 C:\xampp\htdocs\talktech\framework\web\widgets\CActiveForm.php(853): CHtml::activeTextArea(Object(Customername), 'lastname', Array)
+#4 C:\xampp\htdocs\talktech\protected\views\customername\_form.php(36): CActiveForm->textArea(Object(Customername), 'lastname', Array)
+#5 C:\xampp\htdocs\talktech\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\talktech\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\talktech\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\talktech\protected\views\customername\create.php(18): CController->renderPartial('_form', Array)
+#9 C:\xampp\htdocs\talktech\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\talktech\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\talktech\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\talktech\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#13 C:\xampp\htdocs\talktech\protected\controllers\CustomernameController.php(78): CController->render('create', Array)
+#14 C:\xampp\htdocs\talktech\framework\web\actions\CInlineAction.php(49): CustomernameController->actionCreate()
+#15 C:\xampp\htdocs\talktech\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\talktech\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\talktech\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\xampp\htdocs\talktech\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\talktech\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\htdocs\talktech\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\talktech\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\xampp\htdocs\talktech\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('create')
+#24 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('customername/cr...')
+#25 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/talktech/index.php/customername/create
+HTTP_REFERER=http://localhost/talktech/index.php/Customername
+---
+2019/11/14 16:06:47 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/macboo...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/img/macbook-pro.png
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
+2019/11/14 16:07:16 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in C:\xampp\htdocs\talktech\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\talktech\framework\web\CController.php(270): CController->missingAction('img')
+#1 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(282): CController->run('img')
+#2 C:\xampp\htdocs\talktech\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/macboo...')
+#3 C:\xampp\htdocs\talktech\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\talktech\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/talktech/index.php/site/img/macbook-pro.png
+HTTP_REFERER=http://localhost/talktech/index.php/site/index
+---
